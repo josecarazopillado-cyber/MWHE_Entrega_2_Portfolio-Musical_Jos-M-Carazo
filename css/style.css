@@ -7,7 +7,7 @@
     --clr-accent-dk: #027a46;
     --font-sans: "Manrope", sans-serif;
     --ease: 0.3s ease;
-    --sz-title-hero: 3.7rem;
+    --sz-title-hero: 3.4rem;
     --sz-text-base: 0.9rem;
     --sz-title-sect: 1.2rem;
     --sz-text-xs: 0.7rem;
@@ -198,4 +198,76 @@ section {
     font-weight: var(--w-regular);
     color: var(--clr-muted);
     line-height: 1.5;
+}
+
+.track-card {
+    background: var(--clr-bg-secondary);
+    border-radius: 8px;
+    transition: background-color var(--ease), transform var(--ease);
+}
+
+.track-card:hover {
+    background: #2a2a2a;
+    transform: translateY(-3px);
+}
+
+.track-cover {
+    width: 57px;
+    height: 57px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.track-info {
+    min-width: 0;
+}
+
+.track-title {
+    font-size: var(--sz-text-base);
+    font-weight: var(--w-medium);
+    color: var(--clr-text);
+    letter-spacing: var(--spacing-s);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.track-artist {
+    font-size: var(--sz-text-xs);
+    font-weight: var(--w-light);
+    color: var(--clr-muted);
+}
+
+.play-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    background-color: var(--clr-accent);
+    color: var(--clr-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background-color var(--ease), transform var(--ease);
+}
+
+.play-btn:hover {
+    background-color: var(--clr-accent-dk);
+    color: var(--clr-text);
+    transform: scale(1.08);
+}
+
+.label-logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(1.6) opacity(0.5);
+    transition: filter var(--ease), transform var(--ease);
+}
+
+.label-logo:hover {
+    filter: grayscale(0%) brightness(1) opacity(1);
+    transform: scale(1.08);
 }
