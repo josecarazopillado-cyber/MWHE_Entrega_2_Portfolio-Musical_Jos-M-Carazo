@@ -502,9 +502,10 @@ footer {
 }
 
 .s-table th {
-    color: var(--clr-muted);
-    font-weight: var(--w-regular);
+    color: var(--clr-text);
+    font-weight: var(--w-light);
     width: auto;
+    letter-spacing: var(--spacing-s);
 }
 
 .s-table td {
