@@ -250,10 +250,6 @@ section {
     color: var(--clr-muted);
 }
 
-.work-info {
-    min-width: 0;
-}
-
 .play-btn {
     width: 30px;
     height: 30px;
@@ -379,6 +375,10 @@ footer {
     object-fit: cover;
 }
 
+.work-info {
+    min-width: 0;
+}
+
 .work-title {
     font-size: var(--sz-text-base);
     font-weight: var(--w-medium);
@@ -396,6 +396,9 @@ footer {
     color: var(--clr-accent);
     letter-spacing: var(--spacing-s);
     margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .press-card {
