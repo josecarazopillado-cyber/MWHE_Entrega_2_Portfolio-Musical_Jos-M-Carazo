@@ -1,5 +1,22 @@
 console.log("hola hola");
 
+// GSAP INDEX
+document.addEventListener('DOMContentLoaded', function() {
+    const circlePath = document.querySelector('.circle-path');
+    if (circlePath) {
+        gsap.registerPlugin(DrawSVGPlugin);
+
+        gsap.set(circlePath, { drawSVG: "0%" });
+
+        gsap.to(circlePath, {
+            drawSVG: "100%",
+            duration: 1.2,
+            delay: 0.5,
+            ease: "power2.inOut"
+        });
+    }
+});
+
 // MODAL FORMS
 $(document).ready(function() {
     $('#contact-form').on('submit', function(e) {

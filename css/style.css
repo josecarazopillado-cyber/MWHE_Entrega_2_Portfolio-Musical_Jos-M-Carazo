@@ -136,6 +136,24 @@ section {
     margin: 0;
 }
 
+.circle-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.circle-svg {
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    width: 110%;
+    height: 120%;
+    pointer-events: none;
+}
+
+.circle-path {
+    fill: none;
+}
+
 .hero-div {
     width: 50px;
     height: 7px;

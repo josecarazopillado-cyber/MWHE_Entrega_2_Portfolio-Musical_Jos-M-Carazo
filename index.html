@@ -56,7 +56,14 @@
         </div>
         <div class="hero-overlay"></div>
         <div class="container hero-content d-flex flex-column">
-            <h1 class="hero-title">El sonido que falta<br>en tu próximo hit</h1>
+            <h1 class="hero-title">El sonido que falta <br>en tu
+                <span class="circle-wrap">
+                    próximo hit
+                    <svg class="circle-svg" viewBox="0 0 300 100" preserveAspectRatio="none">
+                        <ellipse cx="150" cy="50" rx="145" ry="40" fill="none" stroke="var(--clr-accent)" stroke-width="4" class="circle-path"/>
+                    </svg>
+                </span>
+            </h1>
             <div class="hero-div mb-2"></div>
             <p class="hero-sub">Roone — producción, mezcla y mastering en Madrid.</p>
             <div class="btns d-flex flex-wrap gap-3">
@@ -174,6 +181,7 @@
 
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/DrawSVGPlugin.min.js"></script>
     
     <!-- JS PERSONALIZADO -->
     <script src="js/script.js"></script>
