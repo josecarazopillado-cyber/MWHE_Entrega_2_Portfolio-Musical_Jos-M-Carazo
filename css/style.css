@@ -238,6 +238,10 @@ section {
     color: var(--clr-muted);
 }
 
+.work-info {
+    min-width: 0;
+}
+
 .play-btn {
     width: 30px;
     height: 30px;
@@ -270,4 +274,198 @@ section {
 .label-logo:hover {
     filter: grayscale(0%) brightness(1) opacity(1);
     transform: scale(1.08);
+}
+
+footer {
+    background: var(--clr-bg-secondary);
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.footer-brand {
+    font-family: var(--font-sans);
+    font-size: 2rem;
+    font-weight: var(--w-bold);
+    letter-spacing: var(--spacing-lg);
+    color: var(--clr-text);
+}
+
+.copyright {
+    font-size: var(--sz-text-xs);
+    color: var(--clr-muted);
+}
+
+.sm-icon {
+    color: var(--clr-muted);
+    font-size: 1.5rem;
+    transition: color var(--ease), transform var(--ease);
+}
+
+.sm-icon:hover {
+    color: var(--clr-accent);
+    transform: translateY(-2px);
+}
+
+/* ---------- WORK ---------- */
+#hero-work {
+    background: var(--clr-bg-secondary);
+    padding-top: calc(64px + 1.5rem) !important;
+}
+
+.sect-title {
+    font-size: 1.8rem;
+    font-weight: var(--w-bold);
+    color: var(--clr-text);
+}
+
+.sect-hero-text {
+    font-size: var(--sz-text-base);
+    font-weight: var(--w-light);
+    color: var(--clr-muted);
+    line-height: 1.5;
+    max-width: 370px;
+}
+
+#work-tabs .nav-link {
+    font-size: var(--sz-text-base);
+    font-weight: var(--w-medium);
+    letter-spacing: var(--spacing-s);
+    color: var(--clr-muted);
+    border-radius: 3px;
+    border: 1px solid var(--clr-muted);
+    padding: 0.75rem 1.75rem;
+    transition: background-color var(--ease), color var(--ease), border-color var(--ease);
+}
+
+#work-tabs .nav-link.active {
+    background-color: var(--clr-accent);
+    color: var(--clr-bg);
+    border-color: var(--clr-accent);
+}
+
+#work-tabs .nav-link:not(.active):hover {
+    color: var(--clr-text);
+}
+
+.work-card {
+    background-color: var(--clr-bg-secondary);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform var(--ease);
+}
+
+.work-card:hover {
+    transform: translateY(-4px);
+}
+
+.work-card .card-img-top {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.work-title {
+    font-size: var(--sz-text-base);
+    font-weight: var(--w-medium);
+    color: var(--clr-text);
+    letter-spacing: var(--spacing-s);
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.work-artist {
+    font-size: var(--sz-text-xs);
+    font-weight: var(--w-regular);
+    color: var(--clr-accent);
+    letter-spacing: var(--spacing-s);
+    margin-bottom: 0;
+}
+
+.press-card {
+    background-color: var(--clr-bg-secondary);
+    border-radius: 8px;
+    transition: background-color var(--ease);
+}
+
+.press-card:hover {
+    background-color: #2a2a2a;
+}
+
+.press-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.p-source {
+    font-size: var(--sz-text-xs);
+    font-weight: var(--w-light);
+    letter-spacing: var(--spacing-lg);
+    color: var(--clr-accent);
+}
+
+.p-title {
+    font-size: var(--sz-text-base);
+    font-weight: var(--w-medium);
+    color: var(--clr-text);
+    line-height: 1.5;
+}
+
+.p-link {
+    font-size: var(--sz-text-xs);
+    font-weight: var(--w-regular);
+    color: var(--clr-accent);
+    border: 1px solid var(--clr-accent);
+    text-decoration: none;
+    padding: 0.25rem 2rem;
+    border-radius: 3px;
+    text-align: center;
+    transition: color var(--ease), transform var(--ease);
+}
+
+.p-link i {
+    font-size: 1.2rem;
+}
+
+.p-link:hover {
+    color: var(--clr-bg);
+    background-color: var(--clr-accent);
+    transform: translateY(-3px);
+}
+
+.blog-banner {
+    background-color: var(--clr-accent);
+}
+
+.cargo-title {
+    font-size: 1.5rem;
+    font-weight: var(--w-bold);
+    color: var(--clr-bg);
+}
+
+.cargo-sub {
+    font-size: var(--sz-text-base);
+    font-weight: var(--w-light);
+    color: rgba(13, 13, 13, 0.7);
+}
+
+.btn-blog {
+    display: inline-block;
+    font-size: var(--sz-text-base);
+    font-weight: var(--w-medium);
+    letter-spacing: var(--spacing-s);
+    background: var(--clr-bg);
+    color: var(--clr-accent);
+    text-decoration: none;
+    padding: 0.75rem 1.75rem;
+    border-radius: 3px;
+    transition: background var(--ease), transform var(--ease), color var(--ease);
+}
+
+.btn-blog:hover {
+    background: var(--clr-accent-dk);
+    transform: translateY(-3px);
+    color: var(--clr-text);
 }
