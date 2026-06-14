@@ -164,7 +164,7 @@ section {
     font-size: var(--sz-text-base);
     color: var(--clr-muted);
     line-height: 1.5;
-    max-width: 370px;
+    max-width: 470px;
     margin: 0;
     font-weight: var(--w-light);
     letter-spacing: var(--spacing-s);
@@ -352,7 +352,7 @@ footer {
     font-weight: var(--w-light);
     color: var(--clr-muted);
     line-height: 1.5;
-    max-width: 370px;
+    max-width: 470px;
 }
 
 #work-tabs .nav-link {
@@ -614,4 +614,35 @@ footer {
     font-size: var(--sz-text-base);
     color: var(--clr-muted);
     line-height: 1.5;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (min-width: 1024px) {
+    :root {
+        --sz-title-hero: 3.7rem;
+        --sz-text-base: 1rem;
+        --sz-title-sect: 1.5rem;
+        --sz-text-xs: 0.8rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    :root {
+        --sz-title-hero: 4.5rem;
+        --sz-text-base: 1.3rem;
+        --sz-title-sect: 1.7rem;
+        --sz-text-xs: 1rem;
+    }
+
+    .name-bio {
+        font-size: 3rem;
+    }
+
+    .sm-icon {
+        font-size: 2rem;
+    }
+
+    .sect-title {
+        font-size: 2.5rem;
+    }
 }
