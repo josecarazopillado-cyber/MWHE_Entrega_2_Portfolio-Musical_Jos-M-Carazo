@@ -469,3 +469,107 @@ footer {
     transform: translateY(-3px);
     color: var(--clr-text);
 }
+
+/* ---------- CONTACT ---------- */
+#hero-contact {
+    background: var(--clr-bg-secondary);
+    padding-top: calc(64px + 1.5rem) !important;
+}
+
+.s-card {
+    background-color: var(--clr-bg-secondary);
+    border-radius: 8px;
+}
+
+.s-title {
+    font-size: var(--sz-title-sect);
+    font-weight: var(--w-bold);
+    letter-spacing: var(--spacing-s);
+    color: var(--clr-text);
+}
+
+.s-table {
+    color: var(--clr-text);
+    --bs-table-bg: transparent;
+}
+
+.s-table th,
+.s-table td {
+    font-size: var(--sz-text-base);
+    font-weight: var(--w-regular);
+    border-color: rgba(255, 255, 255, 0.07);
+    padding: 0.7rem 0;
+}
+
+.s-table th {
+    color: var(--clr-muted);
+    font-weight: var(--w-regular);
+    width: auto;
+}
+
+.s-table td {
+    color: var(--clr-accent);
+    font-weight: var(--w-medium);
+    white-space: nowrap;
+    width: 80px;
+}
+
+.note {
+    font-size: var(--sz-text-xs);
+    font-weight: var(--w-light);
+    color: var(--clr-muted);
+    line-height: 1.5;
+}
+
+#contact-form .form-label {
+    font-size: var(--sz-text-base);
+    font-weight: var(--w-medium);
+    letter-spacing: var(--spacing-s);
+    color: var(--clr-text);
+}
+
+#contact-form .form-control,
+#contact-form .form-select {
+    background-color: var(--clr-bg-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    color: var(--clr-text);
+    font-family: var(--font-sans);
+    font-size: var(--sz-text-base);
+    padding: 0.7rem 1rem;
+    border-radius: 3px;
+}
+
+#contact-form .form-control:focus,
+#contact-form .form-select:focus {
+    background-color: var(--clr-bg-secondary);
+    border-color: var(--clr-accent);
+    color: var(--clr-text);
+    box-shadow: 0 0 0 3px rgba(4, 220, 128, 0.15);
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+.send-modal {
+    background-color: var(--clr-bg-secondary);
+    border: none;
+    border-radius: 12px;
+    color: var(--clr-text);
+}
+
+.send-icon {
+    font-size: 3rem;
+    color: var(--clr-accent);
+}
+
+.modal-title {
+    font-size: 1.4rem;
+    font-weight: var(--w-bold);
+}
+
+.modal-text {
+    font-size: var(--sz-text-base);
+    color: var(--clr-muted);
+    line-height: 1.5;
+}

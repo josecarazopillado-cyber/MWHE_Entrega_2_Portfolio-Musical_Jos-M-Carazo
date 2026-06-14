@@ -49,6 +49,135 @@
         </nav>
     </header>
 
+    <section id="hero-contact" class="pb-5">
+        <div class="container">
+            <h2 class="section-sub">TRABAJEMOS JUNTOS</h2>
+            <h1 class="sect-title mb-4">Servicios y contacto</h1>
+            <p class="sect-hero-text mb-0">Producción, mezcla, mastering y horas de estudio. Cuéntame qué necesitas y encontramos la mejor forma de hacerlo.</p>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="section-sub mb-5">SERVICIOS</h2>
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="s-card p-4">
+                        <h3 class="s-title mb-4">Beats</h3>
+                        <table class="table s-table mb-0">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Licencia básica MP3</th>
+                                    <td class="text-end">100 €</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Licencia básica WAV</th>
+                                    <td class="text-end">150 €</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Licencia básica WAV por stems</th>
+                                    <td class="text-end">200 €</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Licencia exclusiva WAV</th>
+                                    <td class="text-end">400 €</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Licencia exclusiva por stems</th>
+                                    <td class="text-end">700 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="s-card p-4 h-100">
+                        <h3 class="s-title mb-4">Horas de estudio</h3>
+                        <table class="table s-table mb-2">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1 hora</th>
+                                    <td class="text-end">100 €</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2 horas</th>
+                                    <td class="text-end">170 €</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3 horas</th>
+                                    <td class="text-end">250 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="note mb-0 mt-3">* Para más horas se acuerda un precio justo y beneficioso para ambas partes.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="s-card p-4 h-100">
+                        <h3 class="s-title mb-4">Mix &amp; Master</h3>
+                        <table class="table s-table mb-2">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Por stems (proyecto)</th>
+                                    <td class="text-end">300 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="note mb-0 mt-3">* Para proyectos con varios temas se acuerda un precio justo y beneficioso para ambas partes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-sub mb-5">CONTACTO</h2>
+            <form id="contact-form">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="service" class="form-label">Tipo de Servicio</label>
+                        <select class="form-select" id="service" name="service" required>
+                            <option value="" selected disabled>Selecciona una opción</option>
+                            <option value="beats">Beats</option>
+                            <option value="estudio">Horas de estudio</option>
+                            <option value="mixmaster">Mix &amp; Master</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn-accent">Enviar mensaje</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="modal fade" id="sendModal" tabindex="-1" aria-labelledby="send-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content send-modal text-center p-4">
+                <div class="modal-body">
+                    <i class="bi bi-check-circle-fill send-icon mb-3"></i>
+                    <h3 class="modal-title mb-2" id="send-modal">¡Mensaje enviado!</h3>
+                    <p class="modal-text mb-0">Gracias por escribir. Te responderé lo antes posible.</p>
+                </div>
+                <button type="button" class="btn-accent mt-3" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
     <footer class="py-5">
         <div class="container">
             <div class="row d-flex align-items-center gy-3">
